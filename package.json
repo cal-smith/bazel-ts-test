@@ -1,0 +1,20 @@
+{
+  "name": "bazel-ts-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ibazel test",
+    "build": "bazel build //src:code",
+    "dev": "ibazel run //src:dev",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@bazel/bazel": "^0.24.1",
+    "@bazel/ibazel": "^0.10.2",
+    "@bazel/typescript": "^0.28.0",
+    "typescript": "^3.4.5"
+  }
+}

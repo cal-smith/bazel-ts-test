@@ -1,0 +1,7 @@
+bazel-bazel-ts-test
+bazel-bin
+bazel-genfiles
+bazel-out
+bazel-testlogs
+dist
+node_modules

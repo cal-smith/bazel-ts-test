@@ -1,0 +1,12 @@
+build --symlink_prefix=dist/
+
+query --output=label_kind
+
+test --test_output=errors
+
+build --experimental_ui
+test --experimental_ui
+
+build --strategy=TypeScriptCompile=worker
+
+test:debug --test_arg=--node_options=--inspect-brk --tets_output=streamed --test_strategy=exclusive --test_timeout=9999 --nocache_test_results
